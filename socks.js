@@ -8,7 +8,7 @@ io.on('connection', function (socket) {
 		console.log(e);
 		console.log("Outlet not defined");
 	}
-	
+	console.log(socket);
 	console.log(socket.rooms);
 
 });
