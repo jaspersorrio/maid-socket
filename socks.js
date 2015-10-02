@@ -9,7 +9,7 @@ io.on('connection', function (socket) {
 		console.log("Outlet not defined");
 	}
 	// console.log(socket);
-	console.log(socket.handshake);
+	console.log(socket.handshake.headers);
 	console.log(socket.rooms);
 
 });
