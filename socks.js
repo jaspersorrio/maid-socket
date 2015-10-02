@@ -12,6 +12,7 @@ io.on('connection', function (socket) {
 
 	socket.on("received",function(msg){
 		console.log(msg);
+		io.to(msg.outlet).emit('success2',{msg:"Success 2"});
 	});
 	// console.log(socket);
 	console.log(socket.handshake.query);
