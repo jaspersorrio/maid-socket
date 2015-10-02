@@ -9,6 +9,10 @@ io.on('connection', function (socket) {
 		console.log(e);
 		console.log("Outlet not defined");
 	}
+
+	socket.on("received",function(msg){
+		console.log(msg);
+	});
 	// console.log(socket);
 	console.log(socket.handshake.query);
 	console.log(socket.rooms);
