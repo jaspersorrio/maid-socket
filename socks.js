@@ -1,4 +1,5 @@
-var io = require('socket.io')(8080);
+var port = process.env.PORT || 5888;
+var io = require('socket.io')();
 
 io.on('connection', function (socket) {
 	try{
